@@ -226,8 +226,7 @@ h3 {
     font-size: 14px;
 }
 
-/* В ПРАКТИЧЕСКОЙ №9 студент B должен добавить оформление для нового блока #contacts.
-   Не вставляйте готовое решение сюда до начала работы. */
+
 
 @media (max-width: 760px) {
     .header-inner,
@@ -251,3 +250,27 @@ h3 {
         padding-top: 54px;
     }
 }
+
+.contacts {
+    background: var(--accent-soft);
+    border-top: 1pxsolid var(--line);
+    scroll-margin-top: 100px;
+}
+
+.contacts .container {
+    padding: 24px;
+    background: var (--surface);
+    border-radius: 18px;
+}
+
+.contacts address {
+    font-style: normal;
+    overflow-wrap: anywhere;
+}
+.contacts address p{
+    margin-bottom: 12px;
+}
+.contacts a {
+    color: var(--accent);
+}
+    
