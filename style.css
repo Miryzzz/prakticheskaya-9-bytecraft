@@ -253,13 +253,13 @@ h3 {
 
 .contacts {
     background: var(--accent-soft);
-    border-top: 1pxsolid var(--line);
+    border-top: 1px solid var(--line);
     scroll-margin-top: 100px;
 }
 
 .contacts .container {
     padding: 24px;
-    background: var (--surface);
+    background: var(--surface);
     border-radius: 18px;
 }
 
