@@ -1,12 +1,12 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><title>Курсы — CodeSpark</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Курсы — CodeSpark</title><link rel="stylesheet" href="style.css"></head><body>
 
 <header class="site-header">
   <div class="container header-inner">
     <a class="logo" href="index.html"><img src="assets/logo.svg" alt="CodeSpark"></a>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Основная навигация">
       <ul>
         <li><a href="index.html">Главная</a></li>
-        <li><a href="courses.html">Курсы</a></li>
+        <li><a href="courses.html" aria-current="page">Курсы</a></li>
         <li><a href="about.html">О школе</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
@@ -28,12 +28,12 @@
 </div><div class="notice">На бесплатном вводном занятии преподаватель поможет выбрать направление.</div></div>
 <aside class="sidebar"><img src="assets/courses.svg" alt="Курсы" style="width:100%"><h3>Как выбрать курс?</h3><p>Учитывайте возраст, опыт и интерес ребёнка.</p><a class="btn" href="contacts.html#trial">Записаться</a></aside>
 </div></section>
-<section class="section alt"><div class="container"><h2 class="section-title">Пример расписания</h2><table class="schedule"><thead><tr><th>Курс</th><th>Возраст</th><th>Дни</th><th>Время</th><th>Формат</th></tr></thead><tbody>
+<section class="section alt"><div class="container"><h2 class="section-title" id="schedule">Пример расписания</h2><p class="table-hint">На узком экране прокрутите таблицу вправо.</p><div class="table-scroll" role="region" aria-labelledby="schedule" tabindex="0"><table class="schedule"><thead><tr><th scope="col">Курс</th><th scope="col">Возраст</th><th scope="col">Дни</th><th scope="col">Время</th><th scope="col">Формат</th></tr></thead><tbody>
 <tr><td>Digital Start</td><td>7–9</td><td>Вт, Чт</td><td>16:00–17:30</td><td>Очно</td></tr>
 <tr><td>Game Creator</td><td>8–11</td><td>Ср, Сб</td><td>17:00–18:30</td><td>Очно</td></tr>
 <tr><td>Python Start</td><td>10–13</td><td>Пн, Пт</td><td>17:30–19:00</td><td>Очно / онлайн</td></tr>
 <tr><td>Web Lab</td><td>12–16</td><td>Вт, Сб</td><td>18:00–19:30</td><td>Очно</td></tr>
-</tbody></table></div></section>
+</tbody></table></div></div></section>
 </main>
 <footer class="footer">
   <div class="container footer-grid">
