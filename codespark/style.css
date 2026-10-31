@@ -47,5 +47,69 @@ textarea{min-height:120px;resize:vertical}
 .footer{background:var(--dark);color:#fff;padding:42px 0;margin-top:40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.footer a{color:#d8b4fe}
 
-/* МОБИЛЬНЫЕ СТИЛИ НАМЕРЕННО ОТСУТСТВУЮТ.
-   Проект предназначен для практической по адаптивной верстке. */
+
+
+/* Адаптивная версия. Основной стиль и содержание сохранены. */
+.container{width:calc(100% - 40px);max-width:1180px}
+img{max-width:100%;height:auto}
+.hero-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.hero-image{width:100%}
+.hero h1{font-size:clamp(32px,4.2vw,58px);overflow-wrap:anywhere}
+.course-layout,.about-layout,.contact-layout{grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:32px}
+.cards>*,.course-list>*,.team-grid>*,.footer-grid>*,.form-group{min-width:0}
+.feature{flex:1;min-width:0;width:auto}
+.form-card,.sidebar,.card,.teacher,.course-card,.feature,.footer{overflow-wrap:anywhere}
+.btn{font:inherit;font-weight:700;cursor:pointer;text-align:center;min-height:44px}
+.main-nav a{display:inline-flex;align-items:center;min-height:44px}
+a[aria-current="page"]{color:var(--primary)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.table-scroll:focus-visible{outline:3px solid var(--primary);outline-offset:3px}
+.table-scroll{width:100%;overflow-x:auto;border-radius:12px}
+.schedule{min-width:700px}
+.table-hint{display:none;color:var(--muted);font-size:14px}
+#trial,#schedule{scroll-margin-top:130px}
+@media(max-width:1024px){
+ .header-inner{height:auto;min-height:82px;flex-wrap:wrap;gap:12px 24px;padding:12px 0}
+ .main-nav{order:3;width:100%}
+ .main-nav ul{justify-content:center;flex-wrap:wrap;gap:4px 28px}
+ .hero-grid{gap:28px}
+ .hero{padding:48px 0}
+ .section{padding:48px 0}
+ .course-layout,.about-layout,.contact-layout{grid-template-columns:minmax(0,1fr)}
+ .sidebar{position:static}
+ .sidebar img{max-width:380px;display:block;margin:auto}
+ .cards,.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .feature-row{flex-wrap:wrap;gap:18px}
+ .feature{flex-basis:calc(50% - 18px)}
+ .section-title{font-size:32px}
+ .page-hero h1{font-size:40px}
+}
+@media(max-width:767px){
+ .container{width:calc(100% - 32px)}
+ .site-header{position:static}
+ .header-inner{gap:10px;padding:12px 0}
+ .logo img{width:145px}
+ .header-inner>.btn{font-size:14px;padding:10px 12px}
+ .main-nav ul{justify-content:space-between;gap:0 8px;font-size:14px}
+ .hero-grid,.cards,.team-grid,.course-list,.footer-grid{grid-template-columns:minmax(0,1fr)}
+ .hero{padding:32px 0}
+ .hero p{font-size:18px;margin-bottom:22px}
+ .hero-actions{flex-direction:column;gap:12px}
+ .hero-image{border-radius:18px}
+ .section{padding:36px 0}
+ .section-title{font-size:28px;line-height:1.2}
+ .section-lead{font-size:16px;margin-bottom:24px}
+ .page-hero{padding:32px 0 24px}
+ .page-hero h1{font-size:32px;line-height:1.15;overflow-wrap:anywhere}
+ .card,.course-card,.teacher,.form-card,.sidebar,.feature{padding:20px}
+ .feature-row,.form-row{flex-direction:column;gap:0}
+ .feature-row{gap:16px}
+ .feature{flex-basis:auto;width:100%}
+ .stat{padding:18px 12px}
+ .stat strong{font-size:28px}
+ .form-card .btn{width:100%}
+ .footer{padding:32px 0;margin-top:24px}
+ .footer-grid{gap:20px}
+ .table-hint{display:block}
+ #trial,#schedule{scroll-margin-top:16px}
+}
